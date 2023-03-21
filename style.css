@@ -1,0 +1,96 @@
+/*------General------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--bg-dark-blue) url(./images/bg-image.jpg) no-repeat center fixed;
+    background-size: cover;
+    font-family: var(--primary-font);
+
+}
+
+:root {
+    /*Background-color */
+    --primary-color: #fd4766 !important;
+    --secondary-color: #0e1525;
+    --bg-dark-blue: #091020;
+    --bg-whte: #fff;
+    --gray-color: #c6c9d8bf;
+    --gradient-color: linear-gradient(-224deg, var(--primary-color) 0, #337DFF 10%);
+    --gradient-text: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--primary-color)79.69%);
+    filter: prodigDXImageTransformMicrosoftgradient(startColorstr='var(--primary-color)', endColorstr='var(--secondary-color)', GradientType=1);
+
+    /*Text Color*/
+    --primary-font: 'Poppins', sans-serif;
+    --primary-text: #FD4766;
+    --text-gray: #c6c9d8bf !important;
+    --text-wite: #fff;
+}
+
+a,
+h6 {
+    color: var(--text-gray) !important;
+}
+
+/*------header------*/
+
+
+li .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    background-color: var(--primary-color);
+    bottom: 0;
+    height: 2px;
+    transition: all 270ms ease-in-out;
+}
+
+li .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    bottom: 0;
+    height: 2px;
+    transition: all 270ms ease-in-out;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color) !important;
+    color: var(--text-wite) !important;
+}
+
+.btn {
+    border: 1px solid var(--gray-color) !important;
+    transition: all 270ms ease-in-out;
+}
+
+/*--------banner_wrapper------*/
+
+
+.banner_wrapper {
+    padding-top: 100px !important;
+    letter-spacing: 1px;
+}
+
+span {
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 53px;
+    font-weight: 800 !important;
+}
